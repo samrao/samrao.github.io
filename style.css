@@ -21,8 +21,6 @@ hr {
 /* Picture captions */
 p {
   padding: 0;
-  margin-bottom: 12px;
-  margin-top: 5px;
   font-size: 13px;
   font-weight: lighter;
 }
@@ -50,16 +48,13 @@ h6 {
   font-weight: lighter;
   text-align: center;
 }
-.videostext {
-  font-size: 13px;
-}
 
 /* ---------------------------------------------------------------------------
 LARGER SCREENS (DESKTOPS, LAPTOPS)
 ----------------------------------------------------------------------------*/
 @media (min-width: 992px) {
-  .col-sm-4 {
-    padding-top: 15px;
+  .squares {
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 30px;
     padding-right: 30px;
@@ -69,19 +64,28 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
-  .col-sm-1 {
+  .menu {
     padding-top: 15px;
-    padding-bottom: 55px;
+    padding-bottom: 65px;
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
+  .embeds {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
   /* Sampreeth Rao */
   h3 {
     margin-top: 75px;
     margin-bottom: 12px;
+  }
+  /* bodytext */
+  p {
+    margin-bottom: 28px;
+    margin-top: 5px;
   }
 }
 
@@ -89,30 +93,39 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
 SMALL SCREENS (TABLETS)
 ----------------------------------------------------------------------------*/
 @media (max-width: 991px) {
-  .col-sm-4 {
-    padding-top: 15px;
+  .squares {
+    padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 25px;
+    padding-right: 25px;
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
-  .col-sm-1 {
+  .menu {
     padding-top: 15px;
-    padding-bottom: 35px;
+    padding-bottom: 47px;
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
+  }
+  .embeds {
+    padding-left: 40px;
+    padding-right: 40px;
   }
     /* Sampreeth Rao */
     h3 {
       margin-top: 50px;
       margin-bottom: 12px;
+    }
+    /* bodytext */
+    p {
+      margin-bottom: 23px;
+      margin-top: 5px;
     }
 }
 /* ---------------------------------------------------------------------------
@@ -122,7 +135,7 @@ XTRA SMALL SCREENS (CELLPHONES)
     .container{
         max-width: 500px;
     }
-    .col-xs-6 {
+    .squares {
       padding-top: 0px;
       padding-bottom: 0px;
       padding-left: 10px;
@@ -133,9 +146,9 @@ XTRA SMALL SCREENS (CELLPHONES)
       border: 1px solid rgba(86,61,124,.2);*/
       text-align: center;
     }
-    .col-xs-2 {
+    .menu {
       padding-top: 15px;
-      padding-bottom: 25px;
+      padding-bottom: 21px;
       padding-left: 0px;
       padding-right: 0px;
       /*background-color: #eee;
@@ -144,11 +157,20 @@ XTRA SMALL SCREENS (CELLPHONES)
       border: 1px solid rgba(86,61,124,.2);*/
       text-align: center;
     }
+    .embeds {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
     /*  Sampreeth Rao */
     h3 {
       margin-top: 25px;
       margin-bottom: 12px;
-        letter-spacing: 2px;
+      letter-spacing: 2px;
+    }
+    /* bodytext */
+    p {
+      margin-bottom: 12px;
+      margin-top: 5px;
     }
 }
 
@@ -165,6 +187,7 @@ Centered Columns (for the menu)
     /* inline-block space fix */
     margin-right:-4px;
 }
+
 
 /* ---------------------------------------------------------------------------
 Fade image to grey on mouseover, make text bold on mouseover
