@@ -199,7 +199,7 @@ Fade image to grey on mouseover, make text bold on mouseover
   transition: all 0.25s ease-in;
 }
 
-.greyfade:hover img {
+.greyfade:hover img, .greyfade:focus img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   /* Firefox 10+, Firefox on Android */
   -webkit-filter: grayscale(100%);
@@ -208,7 +208,7 @@ Fade image to grey on mouseover, make text bold on mouseover
   /* IE 6-9 */
 }
 
-.greyfade:hover p {
+.greyfade:hover p, .greyfade:focus p {
   font-weight: bold;
 }
 
