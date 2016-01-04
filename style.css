@@ -1,0 +1,209 @@
+/* ---------------------------------------------------------------------------
+GENERAL
+----------------------------------------------------------------------------*/
+body {
+  font-family: Open Sans, monospace;
+  font-weight: lighter;
+  /*font-family: Vollkorn, monospace;*/
+  /*font-family: Josefin Slab, monospace;*/
+  /*background-color: #DC143C;
+  color: black;*/
+  /*font-family: Ubuntu, monospace;*/
+}
+
+hr {
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  border-color: #707070;
+}
+
+/* Picture captions */
+p {
+  padding: 0;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: lighter;
+}
+.menu:hover {
+  font-weight: bold;
+}
+#Video {
+  font-weight: bold;
+}
+#Video:hover {
+  font-weight: bold;
+}
+/* Sampreeth Rao */
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+}
+/* Triangle & Seed */
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+}
+.videostext {
+  font-size: 13px;
+}
+
+/* ---------------------------------------------------------------------------
+LARGER SCREENS (DESKTOPS, LAPTOPS)
+----------------------------------------------------------------------------*/
+@media (min-width: 992px) {
+  .col-sm-4 {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);*/
+    text-align: center;
+  }
+  .col-sm-1 {
+    padding-top: 15px;
+    padding-bottom: 55px;
+    /*background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);*/
+    text-align: center;
+  }
+  /* Sampreeth Rao */
+  h3 {
+    margin-top: 75px;
+    margin-bottom: 12px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+SMALL SCREENS (TABLETS)
+----------------------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .col-sm-4 {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 28px;
+    padding-right: 28px;
+    /*background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);*/
+    text-align: center;
+  }
+  .col-sm-1 {
+    padding-top: 15px;
+    padding-bottom: 35px;
+    /*background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);*/
+    text-align: center;
+  }
+    /* Sampreeth Rao */
+    h3 {
+      margin-top: 50px;
+      margin-bottom: 12px;
+    }
+}
+/* ---------------------------------------------------------------------------
+XTRA SMALL SCREENS (CELLPHONES)
+----------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+    .container{
+        max-width: 500px;
+    }
+    .col-xs-6 {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+      /*background-color: #eee;
+      background-color: rgba(86,61,124,.15);
+      border: 1px solid #ddd;
+      border: 1px solid rgba(86,61,124,.2);*/
+      text-align: center;
+    }
+    .col-xs-2 {
+      padding-top: 15px;
+      padding-bottom: 25px;
+      padding-left: 0px;
+      padding-right: 0px;
+      /*background-color: #eee;
+      background-color: rgba(86,61,124,.15);
+      border: 1px solid #ddd;
+      border: 1px solid rgba(86,61,124,.2);*/
+      text-align: center;
+    }
+    /*  Sampreeth Rao */
+    h3 {
+      margin-top: 25px;
+      margin-bottom: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+Centered Columns (for the menu)
+----------------------------------------------------------------------------*/
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+/* ---------------------------------------------------------------------------
+Fade image to grey on mouseover, make text bold on mouseover
+----------------------------------------------------------------------------*/
+.greyfade img {
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.greyfade:hover img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE 6-9 */
+}
+
+.greyfade:hover p {
+  font-weight: bold;
+}
+
+
+/*
+.primary img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.primary:hover img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: none;
+  filter: none;
+}*/
