@@ -39,6 +39,7 @@ h3 {
   font-weight: 700;
   letter-spacing: 5px;
   text-align: center;
+  color: red;
 }
 /* Triangle & Seed */
 h6 {
@@ -171,6 +172,9 @@ XTRA SMALL SCREENS (CELLPHONES)
     p {
       margin-bottom: 12px;
       margin-top: 5px;
+    }
+    body {
+      cursor: pointer;
     }
 }
 
