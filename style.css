@@ -229,15 +229,6 @@ Centered Columns (for the menu)
 Fade image to grey on mouseover, make text bold on mouseover
 ----------------------------------------------------------------------------*/
 
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
 
 /*
 .primary img {
