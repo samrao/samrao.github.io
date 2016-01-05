@@ -56,15 +56,10 @@ h6 {
 .squares img:hover, .squares p:hover {
   cursor: pointer;
 }
-#liylembed {
+.embed {
+  display: none;
+}
 
-}
-#liylembed2 {
-  -moz-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  -webkit-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
-}
 /* ---------------------------------------------------------------------------
 LARGER SCREENS (DESKTOPS, LAPTOPS)
 ----------------------------------------------------------------------------*/
@@ -89,7 +84,7 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
-  .embeds {
+  .embedpadding {
     padding-left: 45px;
     padding-right: 45px;
   }
