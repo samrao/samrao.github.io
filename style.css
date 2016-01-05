@@ -24,20 +24,6 @@ p {
   font-size: 13px;
   font-weight: lighter;
 }
-.menu:hover {
-  font-weight: bold;
-  -moz-transition: all 0.1s ease-in;
-  -o-transition: all 0.1s ease-in;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-}
-
-#Video {
-  font-weight: bold;
-}
-#Video:hover {
-  font-weight: bold;
-}
 /* Sampreeth Rao */
 h3 {
   font-size: 30px;
@@ -54,7 +40,31 @@ h6 {
   font-weight: lighter;
   text-align: center;
 }
+/* Bold menu titles on hover */
+.menu:hover {
+  font-weight: bold;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+/* Bold "Video" in menu*/
+#Video {
+  font-weight: bold;
+}
+/* Grid pointer behaviour*/
+.squares img:hover, .squares p:hover {
+  cursor: pointer;
+}
+#liylembed {
 
+}
+#liylembed2 {
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
 /* ---------------------------------------------------------------------------
 LARGER SCREENS (DESKTOPS, LAPTOPS)
 ----------------------------------------------------------------------------*/
@@ -219,7 +229,15 @@ Centered Columns (for the menu)
 Fade image to grey on mouseover, make text bold on mouseover
 ----------------------------------------------------------------------------*/
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
 
 /*
 .primary img {
