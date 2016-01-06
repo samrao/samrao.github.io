@@ -18,12 +18,16 @@ $("[id$='grid']").click(function(){
   $("[id$='text']").css("font-weight","lighter");
   $("#" + clickedtext).css("font-weight","Bold");
 
-
+  //replace all black and white images with the corresponding coloured pair
+  $("[id$='bw']").hide();
+  $("[id$='img']").show();
   //greyscale on click
   var clickedimg = this.id
-  clickedimg = clickedtext.replace('grid','img');
-  //replace the image with clickedimg id with it's black and white pair
-  //replace all black and white images with the corresponding coloured pair
+  clickedimg = clickedimg.replace('grid','img');
+  $("#" + clickedimg).hide();
+  $("#" + clickedimg + "bw").show();
+    //replace the image with clickedimg id with it's black and white pair
+
 });
 
 
