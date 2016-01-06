@@ -1,63 +1,34 @@
-function showImage(elementId) {
-document.getElementById(elementId).style.display = 'block';
-}
-function hideImage(imageId) {
-document.getElementById(imageId).style.display = 'none';
-}
-
-
-function fadeinimg(elementId) {
-document.getElementById(elementId).style.opacity = '1';
-}
-
-function fadeoutimg(imageId) {
-document.getElementById(imageId).style.opacity = '0';
-}
-
-
-
-
-function liyl(){
-showImage('liylembed');
-}
-
-function liyl2(){
-fadeinimg('liylembed2');
-}
-
-
-//THIS FUNCTION TAKES THE ELEMENT ID AND FADES IT IN, TO USE WITH THE ONCLICK FUNCTION IN HTML
-//function display(elementId){
-//$(elementId).fadeIn(750);
-//}
-
 //SAME AS THE FUNCTION ABOVE, BUT DOES THE ONCLICK EVENT THROUGH JQUERY INSTEAD OF HTML, UTILIZING THE HTML ID TAG
-$('#liylgrid').click(function(){
-  $('#liylembed').fadeIn(750);
+//select all elements with an id that ends with "grid", and assign click behaviour
+$("[id$='grid']").click(function(){
+  //select all elements with an id that ends with "embed", and hide them
+  $("[id$='embed']").hide();
+  //create a variable that stores the id of the clicked link
+  var clicked = this.id;
+  //at this point, the variable "clicked" ends with "grid", so replace with "embed"
+  clicked = clicked.replace('grid','embed');
+  //fade in the embed corresponding to the clicked element, which has an id of the form "____embed"
+  $("#" + clicked).fadeIn(750);
+  //alert (clicked);
 
-  document.getElementById('reelembed').style.display = 'none';
-  document.getElementById('waveembed').style.display = 'none';
-  document.getElementById('alifeinprisonembed').style.display = 'none';
-  document.getElementById('stayforloveembed').style.display = 'none';
-  document.getElementById('alreadystartedembed').style.display = 'none';
 
-  document.getElementById('liyltext').style.fontWeight = 'bold';
-  document.getElementById('reeltext').style.fontWeight = 'lighter';
-  document.getElementById('wavetext').style.fontWeight = 'lighter';
-  document.getElementById('alifeinprisontext').style.fontWeight = 'lighter';
-  document.getElementById('stayforlovetext').style.fontWeight = 'lighter';
-  document.getElementById('alreadystartedtext').style.fontWeight = 'lighter';
+  //bold on click
+  var clickedtext = this.id;
+  clickedtext = clickedtext.replace('grid','text');
+  $("[id$='text']").css("font-weight","lighter");
+  $("#" + clickedtext).css("font-weight","Bold");
 
+
+  //greyscale on click
+  var clickedimg = this.id
+  clickedimg = clickedtext.replace('grid','img');
+  //replace the image with clickedimg id with it's black and white pair
+  //replace all black and white images with the corresponding coloured pair
 });
 
-
-$('#reelgrid').click(function(){
-  $('#reelembed').fadeIn(750);
-  document.getElementById('liylembed').style.display = 'none';
-});
 
 //I WANT AN ALL-PURPOSE JQUERY COMMAND THAT TAKES IN THE CLICKED ELEMENT AND FADES IN THE CORRESPONDING EMBED
-$('#____grid').click(function(){ //when you click on a ____grid link
+/*$('#____grid').click(function(){ //when you click on a ____grid link
   $('#____embed').fadeIn(750); //you fade in ____embed
   document.getElementById('____embed').style.display = 'none'; //all other ____embed not equal to the clicked ____grid disappear
-});
+});*/
