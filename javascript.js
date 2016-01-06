@@ -1,4 +1,9 @@
-//SAME AS THE FUNCTION ABOVE, BUT DOES THE ONCLICK EVENT THROUGH JQUERY INSTEAD OF HTML, UTILIZING THE HTML ID TAG
+//Hide bw images on pageload
+$(document).ready(function(){
+    $("[id$='bw']").css('display','none');
+    $("[id$='embed']").css('display','none');
+});
+
 //select all elements with an id that ends with "grid", and assign click behaviour
 $("[id$='grid']").click(function(){
   //select all elements with an id that ends with "embed", and hide them
@@ -12,21 +17,38 @@ $("[id$='grid']").click(function(){
   //alert (clicked);
 
 
-  //bold on click
+  //remain bold on click, make everything else in the grid have a font style of "lighter"
   var clickedtext = this.id;
   clickedtext = clickedtext.replace('grid','text');
   $("[id$='text']").css("font-weight","lighter");
   $("#" + clickedtext).css("font-weight","Bold");
 
+
   //replace all black and white images with the corresponding coloured pair
   $("[id$='bw']").hide();
   $("[id$='img']").show();
-  //greyscale on click
   var clickedimg = this.id
   clickedimg = clickedimg.replace('grid','img');
+  //on click, hide the coloured image and show the bw image
   $("#" + clickedimg).hide();
   $("#" + clickedimg + "bw").show();
-    //replace the image with clickedimg id with it's black and white pair
+
+
+  //make the text in the grid bold when mouseover corresponding grid element
+  $("[id$='grid']").mouseover(function(){
+    var hoveredtext = this.id
+    hoveredtext = hoveredtext.replace('grid','text');
+    $("#" + hoveredtext).css("font-weight","Bold");
+  });
+  $("[id$='grid']").mouseout(function(){
+    var hoveredtext = this.id
+    hoveredtext = hoveredtext.replace('grid','text');
+    //change the selector to not include the text corresponding to the clicked grid element
+    $("#" + hoveredtext).css("font-weight","lighter");
+    //makes all text in grid lighter, except the one that's clicked
+    $("[id$='text']").css("font-weight","lighter");
+    $("#" + clickedtext).css("font-weight","Bold");
+  });
 
 });
 

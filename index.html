@@ -60,35 +60,35 @@
       <!--  ==========================================================================
           EMBEDS
       ================================================================================ -->
-
-      <div class="row embed" id="liylembed">
+      <!--all embeds hidden in JS onload -->
+      <div class="row" id="liylembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/106154012" width="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/106154012" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
-      <div class="row embed" id="reelembed">
+      <div class="row" id="reelembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/131520719" width="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/131520719" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
-      <div class="row embed" id="waveembed">
+      <div class="row" id="waveembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/142851655" width="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/142851655" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
-      <div class="row embed" id="alifeinprisonembed">
+      <div class="row" id="alifeinprisonembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/113448730" width="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/113448730" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@
       <div class="row embed" id="stayforloveembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/106154012" width="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/106154012" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
       <div class="row embed" id="alreadystartedembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/131520719" width="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/131520719" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -115,17 +115,62 @@
 
         <!-- greyfade class for turning images grey on mousehover -->
         <!-- img-responsive allows the square image in the column to behave responsively as the page size changes -->
-        <a id="liylgrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img id="liylimg" src="imgs/cropped/liyl2.jpg" class="img-responsive"><img id="liylimgbw" src="imgs/cropped/wave2.jpg" class="img-responsive" style="display:none"><p id="liyltext">Live Inside Your Love</p></div></a>
-        <a id="reelgrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img id="reelimg" src="imgs/cropped/reel.jpg" class="img-responsive"><p id="reeltext">Reel</p></div></a>
+        <a id="liylgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="liylimg" src="imgs/cropped/liyl.jpg" class="img-responsive">
+            <!-- refer to JS for code that hides the bw imgs on pageload -->
+            <img id="liylimgbw" src="imgs/cropped/liylbw.jpg" class="img-responsive">
+            <p id="liyltext">Live Inside Your Love</p>
+          </div>
+        </a>
+
+        <a id="reelgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="reelimg" src="imgs/cropped/reel.jpg" class="img-responsive">
+            <img id="reelimgbw" src="imgs/cropped/reelbw.jpg" class="img-responsive">
+            <p id="reeltext">Reel</p>
+          </div>
+        </a>
         <!-- to make columns of different heights stack properly -->
         <div class="clearfix visible-xs-block"></div>
-        <a id="wavegrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img id="waveimg" src="imgs/cropped/wave2.jpg" class="img-responsive"><p id="wavetext">Wave</p></div></a>
-        <a id="alifeinprisongrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img id="alifeinprisonimg" src="imgs/cropped/alifeinprison3.jpg" class="img-responsive"><p id="alifeinprisontext">A Life In Prison</p></div></a>
-        <a id="stayforlovegrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img id="stayforloveimg" src="imgs/cropped/stayforlove.jpg" class="img-responsive"><p id="stayforlovetext">Stay For Love</p></div></a>
-        <a id="alreadystartedgrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img id="alreadystartedimg" src="imgs/cropped/alreadystarted2.jpg" class="img-responsive"><p id="alreadystartedtext">Already Started</p></div></a>
-      </div>
-    </div>
 
+        <a id="wavegrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="waveimg" src="imgs/cropped/wave.jpg" class="img-responsive">
+            <img id="waveimgbw" src="imgs/cropped/wavebw.jpg" class="img-responsive">
+            <p id="wavetext">Wave</p>
+          </div>
+        </a>
+
+        <a id="alifeinprisongrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="alifeinprisonimg" src="imgs/cropped/alifeinprison.jpg" class="img-responsive">
+            <img id="alifeinprisonimgbw" src="imgs/cropped/alifeinprisonbw.jpg" class="img-responsive">
+            <p id="alifeinprisontext">A Life In Prison</p>
+          </div>
+        </a>
+
+        <a id="stayforlovegrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="stayforloveimg" src="imgs/cropped/stayforlove.jpg" class="img-responsive">
+            <img id="stayforloveimgbw" src="imgs/cropped/stayforlovebw.jpg" class="img-responsive">
+            <p id="stayforlovetext">Stay For Love</p>
+          </div>
+        </a>
+
+        <a id="alreadystartedgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="alreadystartedimg" src="imgs/cropped/alreadystarted.jpg" class="img-responsive">
+            <img id="alreadystartedimgbw" src="imgs/cropped/alreadystartedbw.jpg" class="img-responsive">
+            <p id="alreadystartedtext">Already Started</p>
+          </div>
+        </a>
+
+      <!-- close container -->
+    </div>
+    <div id="copyright">
+      Copyright 2015
+    </div>
     <!--  ==========================================================================
         JAVASCRIPT/JQUERY POINTERS
     ================================================================================ -->

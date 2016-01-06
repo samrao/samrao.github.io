@@ -47,6 +47,7 @@ h6 {
   -o-transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
+  cursor: pointer;
 }
 /* Bold "Video" in menu*/
 #Video {
@@ -144,7 +145,7 @@ SMALL SCREENS (TABLETS)
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
-  .embeds {
+  .embedpadding {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -188,7 +189,7 @@ XTRA SMALL SCREENS (CELLPHONES)
       border: 1px solid rgba(86,61,124,.2);*/
       text-align: center;
     }
-    .embeds {
+    .embedpadding {
       padding-left: 25px;
       padding-right: 25px;
     }
