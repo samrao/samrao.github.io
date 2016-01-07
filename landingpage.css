@@ -2,16 +2,18 @@ img[id$='bg'] {
     height: 100%;
     position: absolute;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
   /* ---------------------------------------------------------------------------
   XTRA SMALL SCREENS (CELLPHONES)
   ----------------------------------------------------------------------------*/
-  @media (max-width: 767px) {
+  /*@media (max-width: 767px) {
     img[id$='bg'] {
         height: 100%;
         position: absolute;
         left: 0;
-        /*transform: translate(-50%, 0);*/
+        transform: translate(-50%, 0);
       }
-  }
+  }*/
