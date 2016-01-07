@@ -1,8 +1,6 @@
 img[id$='bg'] {
-    display: block;
     height: 100%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    white-space:nowrap;
   }
