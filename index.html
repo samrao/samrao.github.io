@@ -41,7 +41,7 @@
       ================================================================================ -->
 
       <h3>SAMPREETH RAO <!-- &#3248;&#3219; --></h3>
-      <h6>Triangle &amp; Seed</h6>
+      <!--<h6>Triangle &amp; Seed</h6>-->
       <!--<div class="row row-centered">
         <div class="col-xs-12 col-centered"><a href="https://www.instagram.com/raorry"><img src="instagram.png" width="40px"></a></div>
       </div>-->
@@ -50,29 +50,92 @@
       ================================================================================ -->
 
       <div class="row row-centered">
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Video">Video</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Photo">Photo</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Tracks">Tracks</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="About">About</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Contact">Contact</div>
+        <div class="col-xs-2 col-sm-1 menu col-centered" id="videomenu" style="font-weight:bold">Video</div>
+        <a href="photo.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="photomenu">Photo</div></a>
+        <a href="tracks.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="tracksmenu">Tracks</div>
+        <a href="about.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="aboutmenu">Bio</div>
+        <a href="contact.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="contactmenu">Contact</div>
       </div>
 
       <!--  ==========================================================================
           EMBEDS
       ================================================================================ -->
-
-      <div class="row embed" id="liylembed">
+      <!--all embeds hidden in JS onload -->
+      <div class="row" id="liylembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/106154012" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/106154012" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
-      <div class="row embed" id="reelembed">
+      <div class="row" id="liylembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="liylembedptext"></p>
+        </div>
+      </div>
+<!----------------------------->
+      <div class="row" id="reelembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/131520719" width="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/131520719" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
+        </div>
+      </div>
+      <div class="row" id="reelembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="reelembedptext">Excerpts from a few projects I've directed/written/DPed.<br><br>Music by Kevin Ramroop</p>
+        </div>
+      </div>
+<!----------------------------->
+      <div class="row" id="waveembed">
+        <div class="col-xs-12 embedpadding">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/142851655" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="waveembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="waveembedptext"></p>
+        </div>
+      </div>
+<!----------------------------->
+      <div class="row" id="alifeinprisonembed">
+        <div class="col-xs-12 embedpadding">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/113448730" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="alifeinprisonembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="alifeinprisonembedptext">A look at a life in prison: innocence, age, freedom, and imprisonment.<br><br>Music by Kevin Ramroop<br><br>Cast:<br>Brandon Bernard<br>Jamyle Burchell<br>Kevin Ramroop<br><br>Shortened cut.</p>
+        </div>
+      </div>
+<!----------------------------->
+      <div class="row" id="stayforloveembed">
+        <div class="col-xs-12 embedpadding">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/106154012" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="stayforloveembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="stayforloveembedptext">Returning to something.<br><br>Music by Kevin Ramroop</p>
+        </div>
+      </div>
+<!----------------------------->
+      <div class="row" id="alreadystartedembed">
+        <div class="col-xs-12 embedpadding">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/131520719" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="alreadystartedembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="alreadystartedembedptext"></p>
         </div>
       </div>
 
@@ -82,17 +145,62 @@
 
         <!-- greyfade class for turning images grey on mousehover -->
         <!-- img-responsive allows the square image in the column to behave responsively as the page size changes -->
-        <a id="liylgrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img src="imgs/cropped/liyl2.jpg" class="img-responsive"><p id="liyltext">Live Inside Your Love</p></div></a>
-        <a id="reelgrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img src="imgs/cropped/reel.jpg" class="img-responsive"><p id="reeltext">Reel</p></div></a>
+        <a id="liylgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="liylimg" src="imgs/cropped/liyl.jpg" class="img-responsive">
+            <!-- refer to JS for code that hides the bw imgs on pageload -->
+            <img id="liylimgbw" src="imgs/cropped/liylbw.jpg" class="img-responsive">
+            <p id="liylgridtext">Live Inside Your Love</p>
+          </div>
+        </a>
+
+        <a id="reelgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="reelimg" src="imgs/cropped/reel.jpg" class="img-responsive">
+            <img id="reelimgbw" src="imgs/cropped/reelbw.jpg" class="img-responsive">
+            <p id="reelgridtext">Reel</p>
+          </div>
+        </a>
         <!-- to make columns of different heights stack properly -->
         <div class="clearfix visible-xs-block"></div>
-        <a id="wavegrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img src="imgs/cropped/wave2.jpg" class="img-responsive"><p id="wavetext">Wave</p></div></a>
-        <a id="alifeinprisongrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img src="imgs/cropped/alifeinprison3.jpg" class="img-responsive"><p id="alifeinprisontext">A Life In Prison</p></div></a>
-        <a id="stayforlovegrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img src="imgs/cropped/stayforlove.jpg" class="img-responsive"><p id="stayforlovetext">Stay For Love</p></div></a>
-        <a id="alreadystartedgrid"><div class="col-xs-6 col-sm-4 squares greyfade"><img src="imgs/cropped/alreadystarted2.jpg" class="img-responsive"><p id="alreadystartedtext">Already Started</p></div></a>
-      </div>
-    </div>
 
+        <a id="wavegrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="waveimg" src="imgs/cropped/wave.jpg" class="img-responsive">
+            <img id="waveimgbw" src="imgs/cropped/wavebw.jpg" class="img-responsive">
+            <p id="wavegridtext">Wave</p>
+          </div>
+        </a>
+
+        <a id="alifeinprisongrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="alifeinprisonimg" src="imgs/cropped/alifeinprison.jpg" class="img-responsive">
+            <img id="alifeinprisonimgbw" src="imgs/cropped/alifeinprisonbw.jpg" class="img-responsive">
+            <p id="alifeinprisongridtext">A Life In Prison</p>
+          </div>
+        </a>
+
+        <a id="stayforlovegrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="stayforloveimg" src="imgs/cropped/stayforlove.jpg" class="img-responsive">
+            <img id="stayforloveimgbw" src="imgs/cropped/stayforlovebw.jpg" class="img-responsive">
+            <p id="stayforlovegridtext">Stay For Love</p>
+          </div>
+        </a>
+
+        <a id="alreadystartedgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="alreadystartedimg" src="imgs/cropped/alreadystarted.jpg" class="img-responsive">
+            <img id="alreadystartedimgbw" src="imgs/cropped/alreadystartedbw.jpg" class="img-responsive">
+            <p id="alreadystartedgridtext">Already Started</p>
+          </div>
+        </a>
+
+      <!-- close container -->
+    </div>
+    <!--<div id="copyright" align="bottom-left">
+      Copyright 2015
+    </div>-->
     <!--  ==========================================================================
         JAVASCRIPT/JQUERY POINTERS
     ================================================================================ -->

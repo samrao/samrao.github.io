@@ -1,63 +1,55 @@
-function showImage(elementId) {
-document.getElementById(elementId).style.display = 'block';
-}
-function hideImage(imageId) {
-document.getElementById(imageId).style.display = 'none';
-}
-
-
-function fadeinimg(elementId) {
-document.getElementById(elementId).style.opacity = '1';
-}
-
-function fadeoutimg(imageId) {
-document.getElementById(imageId).style.opacity = '0';
-}
-
-
-
-
-function liyl(){
-showImage('liylembed');
-}
-
-function liyl2(){
-fadeinimg('liylembed2');
-}
-
-
-//THIS FUNCTION TAKES THE ELEMENT ID AND FADES IT IN, TO USE WITH THE ONCLICK FUNCTION IN HTML
-//function display(elementId){
-//$(elementId).fadeIn(750);
-//}
-
-//SAME AS THE FUNCTION ABOVE, BUT DOES THE ONCLICK EVENT THROUGH JQUERY INSTEAD OF HTML, UTILIZING THE HTML ID TAG
-$('#liylgrid').click(function(){
-  $('#liylembed').fadeIn(750);
-
-  document.getElementById('reelembed').style.display = 'none';
-  document.getElementById('waveembed').style.display = 'none';
-  document.getElementById('alifeinprisonembed').style.display = 'none';
-  document.getElementById('stayforloveembed').style.display = 'none';
-  document.getElementById('alreadystartedembed').style.display = 'none';
-
-  document.getElementById('liyltext').style.fontWeight = 'bold';
-  document.getElementById('reeltext').style.fontWeight = 'lighter';
-  document.getElementById('wavetext').style.fontWeight = 'lighter';
-  document.getElementById('alifeinprisontext').style.fontWeight = 'lighter';
-  document.getElementById('stayforlovetext').style.fontWeight = 'lighter';
-  document.getElementById('alreadystartedtext').style.fontWeight = 'lighter';
-
+//HIDE BW IMAGES AND EMBEDS ON PAGELOAD bw images on pageload
+$(document).ready(function(){
+    $("[id$='bw']").hide();
+    $("[id$='embed']").hide();
+    $("[id$='embedtext']").hide();
 });
 
 
-$('#reelgrid').click(function(){
-  $('#reelembed').fadeIn(750);
-  document.getElementById('liylembed').style.display = 'none';
-});
+//SELECT ALL ELEMENTS WITH AN ID THAT ENDS WITH "GRID", AND ASSIGN CLICK BEHAVIOUR
+$("[id$='grid']").click(function(){
+  //MAKE EMBEDS FADE IN ON CLICK OF CORRESPONDING GRID ELEMENT
+    //select all elements with an id that ends with "embed", and hide them
+    $("[id$='embed']").hide();
+    $("[id$='embedtext']").hide();
+    //create a variable that stores the id of the clicked link
+    var clicked = this.id;
+    //at this point, the variable "clicked" ends with "grid", so replace with "embed"
+    clicked = clicked.replace('grid','embed');
+    //fade in the embed corresponding to the clicked element, which has an id of the form "____embed"
+    $("#" + clicked).fadeIn(750);
+    $("#" + clicked + "text").fadeIn(900);
+    //alert (clicked);
 
-//I WANT AN ALL-PURPOSE JQUERY COMMAND THAT TAKES IN THE CLICKED ELEMENT AND FADES IN THE CORRESPONDING EMBED
-$('#____grid').click(function(){ //when you click on a ____grid link
-  $('#____embed').fadeIn(750); //you fade in ____embed
-  document.getElementById('____embed').style.display = 'none'; //all other ____embed not equal to the clicked ____grid disappear
+
+  //TEXT REMAINS BOLD ON CLICK, EVERYTHING ELSE HAS A FONT STYLE OF "LIGHTER"
+    var clickedtext = this.id;
+    clickedtext = clickedtext.replace('grid','gridtext');
+    $("[id$='gridtext']").css("font-weight","lighter");
+    $("#" + clickedtext).css("font-weight","Bold");
+
+  //MAKE IMAGES STAY BW ON CLICK
+    //replace all black and white images with the corresponding coloured pair
+    $("[id$='bw']").hide();
+    $("[id$='img']").show();
+    var clickedimg = this.id
+    clickedimg = clickedimg.replace('grid','img');
+    //on click, hide the coloured image and show the bw image
+    $("#" + clickedimg).hide();
+    $("#" + clickedimg + "bw").show();
+
+
+  //MAKE TEXT IN THE GRID BOLD WHEN MOUSEOVER CORRESPONDING ELEMENT
+    $("[id$='grid']").mouseover(function(){
+      var hoveredtext = this.id
+      hoveredtext = hoveredtext.replace('grid','gridtext');
+      $("#" + hoveredtext).css("font-weight","Bold");
+    });
+    $("[id$='grid']").mouseout(function(){
+      //makes all text in grid lighter, except the one that's clicked
+      $("[id$='gridtext']").css("font-weight","lighter");
+      $("#" + clickedtext).css("font-weight","Bold");
+    });
+
+  //create a function that makes video stop playing when another link is clicked
 });
