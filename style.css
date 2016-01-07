@@ -4,6 +4,7 @@ GENERAL
 body {
   font-family: Open Sans;
   font-weight: lighter;
+  color:#383838;
   /*font-family: Vollkorn, monospace;*/
   /*font-family: Josefin Slab, monospace;*/
   /*background-color: #DC143C;
@@ -17,9 +18,31 @@ hr {
   margin-top: 10px;
   border-color: #707070;
 }
-
+/* Hyperlinks */
+a:link {
+    color: #383838;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #383838;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:active {
+    color: #383838;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #383838;
+    background-color: transparent;
+    text-decoration: none;
+}
 /* Picture captions */
 p {
+  color: black;
   padding: 0;
   font-size: 13px;
   font-weight: lighter;
@@ -47,20 +70,7 @@ h6 {
   -o-transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
-  cursor: pointer;
 }
-/* Bold "Video" in menu*/
-#Video {
-  font-weight: bold;
-}
-/* Grid pointer behaviour*/
-.squares img:hover, .squares p:hover {
-  cursor: pointer;
-}
-.embed {
-  display: none;
-}
-
 /* ---------------------------------------------------------------------------
 LARGER SCREENS (DESKTOPS, LAPTOPS)
 ----------------------------------------------------------------------------*/
@@ -89,13 +99,22 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     padding-left: 45px;
     padding-right: 45px;
   }
+  .embedtextpadding {
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 16px;
+  }
+  p[id$='embedptext']{
+        font-size: 14px;
+  }
   /* Sampreeth Rao */
   h3 {
     margin-top: 75px;
     margin-bottom: 12px;
   }
   /* bodytext */
-  p {
+  p[id$='gridtext'] {
     margin-bottom: 28px;
     margin-top: 5px;
   }
@@ -149,6 +168,15 @@ SMALL SCREENS (TABLETS)
     padding-left: 40px;
     padding-right: 40px;
   }
+  .embedtextpadding {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 70px;
+    padding-bottom: 3px;
+  }
+  p[id$='embedptext']{
+        font-size: 13px;
+  }
     /* Sampreeth Rao */
     h3 {
       margin-top: 50px;
@@ -192,6 +220,15 @@ XTRA SMALL SCREENS (CELLPHONES)
     .embedpadding {
       padding-left: 25px;
       padding-right: 25px;
+    }
+    .embedtextpadding {
+      padding-top: 7px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 0px;
+    }
+    p[id$='embedptext']{
+          font-size: 13px;
     }
     /*  Sampreeth Rao */
     h3 {

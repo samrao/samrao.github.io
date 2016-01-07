@@ -50,11 +50,11 @@
       ================================================================================ -->
 
       <div class="row row-centered">
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Video">Video</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Photo">Photo</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Tracks">Tracks</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="About">About</div>
-        <div class="col-xs-2 col-sm-1 menu col-centered" id="Contact">Contact</div>
+        <div class="col-xs-2 col-sm-1 menu col-centered" id="videomenu" style="font-weight:bold">Video</div>
+        <a href="photo.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="photomenu">Photo</div></a>
+        <a href="tracks.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="tracksmenu">Tracks</div>
+        <a href="about.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="aboutmenu">Bio</div>
+        <a href="contact.html"><div class="col-xs-2 col-sm-1 menu col-centered" id="contactmenu">Contact</div>
       </div>
 
       <!--  ==========================================================================
@@ -66,6 +66,11 @@
           <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://player.vimeo.com/video/106154012" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
+        </div>
+      </div>
+      <div class="row" id="liylembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="liylembedptext">A look at a life in prison: innocence, age, freedom, and imprisonment.<br><br>Music by Kevin Ramroop<br><br>Cast:<br>Brandon Bernard<br>Jamyle Burchell<br>Kevin Ramroop<br><br>Shortened cut.</p>
         </div>
       </div>
 
@@ -93,7 +98,7 @@
         </div>
       </div>
 
-      <div class="row embed" id="stayforloveembed">
+      <div class="row" id="stayforloveembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://player.vimeo.com/video/106154012" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -101,7 +106,7 @@
         </div>
       </div>
 
-      <div class="row embed" id="alreadystartedembed">
+      <div class="row" id="alreadystartedembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://player.vimeo.com/video/131520719" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -120,7 +125,7 @@
             <img id="liylimg" src="imgs/cropped/liyl.jpg" class="img-responsive">
             <!-- refer to JS for code that hides the bw imgs on pageload -->
             <img id="liylimgbw" src="imgs/cropped/liylbw.jpg" class="img-responsive">
-            <p id="liyltext">Live Inside Your Love</p>
+            <p id="liylgridtext">Live Inside Your Love</p>
           </div>
         </a>
 
@@ -128,7 +133,7 @@
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="reelimg" src="imgs/cropped/reel.jpg" class="img-responsive">
             <img id="reelimgbw" src="imgs/cropped/reelbw.jpg" class="img-responsive">
-            <p id="reeltext">Reel</p>
+            <p id="reelgridtext">Reel</p>
           </div>
         </a>
         <!-- to make columns of different heights stack properly -->
@@ -138,7 +143,7 @@
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="waveimg" src="imgs/cropped/wave.jpg" class="img-responsive">
             <img id="waveimgbw" src="imgs/cropped/wavebw.jpg" class="img-responsive">
-            <p id="wavetext">Wave</p>
+            <p id="wavegridtext">Wave</p>
           </div>
         </a>
 
@@ -146,7 +151,7 @@
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="alifeinprisonimg" src="imgs/cropped/alifeinprison.jpg" class="img-responsive">
             <img id="alifeinprisonimgbw" src="imgs/cropped/alifeinprisonbw.jpg" class="img-responsive">
-            <p id="alifeinprisontext">A Life In Prison</p>
+            <p id="alifeinprisongridtext">A Life In Prison</p>
           </div>
         </a>
 
@@ -154,7 +159,7 @@
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="stayforloveimg" src="imgs/cropped/stayforlove.jpg" class="img-responsive">
             <img id="stayforloveimgbw" src="imgs/cropped/stayforlovebw.jpg" class="img-responsive">
-            <p id="stayforlovetext">Stay For Love</p>
+            <p id="stayforlovegridtext">Stay For Love</p>
           </div>
         </a>
 
@@ -162,15 +167,15 @@
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="alreadystartedimg" src="imgs/cropped/alreadystarted.jpg" class="img-responsive">
             <img id="alreadystartedimgbw" src="imgs/cropped/alreadystartedbw.jpg" class="img-responsive">
-            <p id="alreadystartedtext">Already Started</p>
+            <p id="alreadystartedgridtext">Already Started</p>
           </div>
         </a>
 
       <!-- close container -->
     </div>
-    <div id="copyright">
+    <!--<div id="copyright" align="bottom-left">
       Copyright 2015
-    </div>
+    </div>-->
     <!--  ==========================================================================
         JAVASCRIPT/JQUERY POINTERS
     ================================================================================ -->
