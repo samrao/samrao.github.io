@@ -1,6 +1,3 @@
-
-
-
 var numberofimages = 2;
 var randomnumber = Math.floor(numberofimages*Math.random());
 $('#' + randomnumber + 'bg').show();
