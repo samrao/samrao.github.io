@@ -51,5 +51,6 @@ $("[id$='grid']").click(function(){
       $("#" + clickedtext).css("font-weight","Bold");
     });
 
+
   //create a function that makes video stop playing when another link is clicked
 });
