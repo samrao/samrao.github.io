@@ -36,7 +36,7 @@ a:visited {
 /* Picture captions */
 p {
   color: black;
-  padding: 0;
+  padding: 0px;
   font-size: 13px;
   font-weight: lighter;
 }
@@ -64,10 +64,20 @@ h6 {
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
+/*.row {
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}*/
+
 /* ---------------------------------------------------------------------------
-LARGER SCREENS (DESKTOPS, LAPTOPS)
+EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
 ----------------------------------------------------------------------------*/
-@media (min-width: 992px) {
+@media (min-width: 1500px) {
+  .container{
+      min-width: 1500px;
+  }
   .squares {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -89,9 +99,20 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     text-align: center;
     font-size: 14px;
   }
+  /* General embed padding */
   .embedpadding {
     padding-left: 45px;
     padding-right: 45px;
+  }
+  /* Padding for 50mm side by side photos */
+  .embedpaddingleft {
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+  /* Padding for 50mm side by side photos */
+  .embedpaddingright {
+    padding-right: 0px;
+    padding-left: 5px;
   }
   .embedtextpadding {
     padding-top: 25px;
@@ -114,9 +135,111 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
   p[id$='embedptext']{
     font-size: 14px;
   }
+  /*photo caption spacing*/
+  p.caption{
+    margin-bottom: 16px;
+  }
   /*embed photo spacing*/
   img.photo {
     margin-bottom: 28px;
+  }
+  /*embed photo spacing for photos with captions (ie. 50mm photos)*/
+  img.photowithcaption {
+    margin-bottom: 10px;
+  }
+  .greyfade:hover img, .greyfade:focus img, .greyfade:active img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    /* Firefox 10+, Firefox on Android */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    /* IE 6-9 */
+    -moz-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    -webkit-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+  }
+  .greyfade:hover p, .greyfade:focus p, .greyfade:active p {
+    font-weight: bold;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+LARGER SCREENS (DESKTOPS, LAPTOPS)
+----------------------------------------------------------------------------*/
+@media (max-width: 1499px) {
+  .squares {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);*/
+    text-align: center;
+  }
+  .menu {
+    padding-top: 5px;
+    padding-bottom: 65px;
+    /*background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);*/
+    text-align: center;
+    font-size: 14px;
+  }
+  /* General embed padding */
+  .embedpadding {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  /* Padding for 50mm side by side photos */
+  .embedpaddingleft {
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+  /* Padding for 50mm side by side photos */
+  .embedpaddingright {
+    padding-right: 0px;
+    padding-left: 5px;
+  }
+  .embedtextpadding {
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 16px;
+  }
+  /* Sampreeth Rao */
+  h3 {
+    margin-top: 75px;
+    margin-bottom: 12px;
+  }
+  /* grid text */
+  p[id$='gridtext'] {
+    margin-bottom: 28px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  /*embed description text*/
+  p[id$='embedptext']{
+    font-size: 14px;
+  }
+  /*photo caption spacing*/
+  p.caption{
+    margin-bottom: 16px;
+  }
+  /*embed photo spacing*/
+  img.photo {
+    margin-bottom: 28px;
+  }
+  /*embed photo spacing for photos with captions (ie. 50mm photos)*/
+  img.photowithcaption {
+    margin-bottom: 10px;
   }
   .greyfade:hover img, .greyfade:focus img, .greyfade:active img {
     filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
@@ -167,6 +290,16 @@ SMALL SCREENS (TABLETS)
     padding-left: 40px;
     padding-right: 40px;
   }
+  /* Padding for 50mm side by side photos */
+  .embedpaddingleft {
+    padding-left: 40px;
+    padding-right: 5px;
+  }
+  /* Padding for 50mm side by side photos */
+  .embedpaddingright {
+    padding-right: 40px;
+    padding-left: 5px;
+  }
   .embedtextpadding {
     padding-top: 12px;
     padding-left: 40px;
@@ -188,8 +321,17 @@ SMALL SCREENS (TABLETS)
     p[id$='embedptext']{
           font-size: 13px;
     }
+    /*photo caption spacing*/
+    p.caption{
+      margin-bottom: 14px;
+    }
+    /*embed photo spacing*/
     img.photo {
       margin-bottom: 23px;
+    }
+    /*embed photo spacing for photos with captions (ie. 50mm photos)*/
+    img.photowithcaption {
+      margin-bottom: 8px;
     }
 }
 /* ---------------------------------------------------------------------------
@@ -225,6 +367,16 @@ XTRA SMALL SCREENS (CELLPHONES)
       padding-left: 25px;
       padding-right: 25px;
     }
+    /* Padding for 50mm side by side photos */
+    .embedpaddingleft {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    /* Padding for 50mm side by side photos */
+    .embedpaddingright {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
     .embedtextpadding {
       padding-top: 9px;
       padding-left: 25px;
@@ -246,8 +398,17 @@ XTRA SMALL SCREENS (CELLPHONES)
     p[id$='embedptext']{
           font-size: 13px;
     }
+    /*photo caption spacing*/
+    p.caption{
+      margin-bottom: 8px;
+    }
+    /*embed photo spacing*/
     img.photo {
       margin-bottom: 12px;
+    }
+    /*embed photo spacing for photos with captions (ie. 50mm photos)*/
+    img.photowithcaption {
+      margin-bottom: 2px;
     }
 }
 
