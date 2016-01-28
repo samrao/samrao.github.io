@@ -184,7 +184,8 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
 /* ---------------------------------------------------------------------------
 LARGER SCREENS (DESKTOPS, LAPTOPS)
 ----------------------------------------------------------------------------*/
-@media (max-width: 1499px) {
+/*@media (max-width: 1499px)*/
+@media only screen and (min-width:992px) and (max-width: 1499px)  {
   .squares {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -196,7 +197,7 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
-  .socialmedialogos {
+  .socialmedialogos{
     padding-top: 10px;
     padding-left: 47px;
   }
@@ -356,6 +357,7 @@ SMALL SCREENS (TABLETS)
     p[id$='gridtext'] {
       margin-bottom: 23px;
       margin-top: 5px;
+      font-size: 13px;
     }
     /*embed description text*/
     p[id$='embedptext']{
@@ -395,6 +397,7 @@ XTRA SMALL SCREENS (CELLPHONES)
     .socialmedialogos{
       padding-top: 10px;
       padding-left: 25px;
+      text-align:center;
     }
     .copyright{
       padding-top: 10px;
@@ -447,6 +450,7 @@ XTRA SMALL SCREENS (CELLPHONES)
     p[id$='gridtext'] {
       margin-bottom: 12px;
       margin-top: 5px;
+      font-size: 13px;
     }
     /*embed description text*/
     p[id$='embedptext']{
