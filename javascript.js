@@ -1,9 +1,9 @@
 //HIDE BW IMAGES AND EMBEDS ON PAGELOAD
-$(document).ready(function(){
-    $("[id$='bw']").hide();
-    $("[id$='embed']").hide();
-    $("[id$='embedtext']").hide();
-});
+  $(document).ready(function(){
+      $("[id$='bw']").hide();
+      $("[id$='embed']").hide();
+      $("[id$='embedtext']").hide();
+  });
 
 
 //SELECT ALL ELEMENTS WITH AN ID THAT ENDS WITH "GRID", AND ASSIGN CLICK BEHAVIOUR
