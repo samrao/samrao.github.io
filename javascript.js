@@ -1,4 +1,4 @@
-//HIDE BW IMAGES AND EMBEDS ON PAGELOAD bw images on pageload
+//HIDE BW IMAGES AND EMBEDS ON PAGELOAD
 $(document).ready(function(){
     $("[id$='bw']").hide();
     $("[id$='embed']").hide();
@@ -53,4 +53,5 @@ $("[id$='grid']").click(function(){
 
 
   //create a function that makes video stop playing when another link is clicked
+  //create a function that automatically scrolls the page to the top when a picture in the grid is clicked
 });
