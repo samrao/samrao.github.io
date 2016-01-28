@@ -37,7 +37,8 @@ a:visited {
 p {
   color: black;
   padding: 0px;
-  font-size: 13px;
+  margin: 0px;
+  font-size: 9px;
   font-weight: lighter;
 }
 /* Sampreeth Rao */
@@ -78,6 +79,16 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
   .container{
       min-width: 1500px;
   }
+  .socialmedialogos{
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+  .copyright{
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 10px;
+  }
   .squares {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -90,14 +101,17 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
     text-align: center;
   }
   .menu {
-    padding-top: 5px;
-    padding-bottom: 65px;
+    padding-top: 0px;
+    padding-bottom: 12px;
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
     font-size: 14px;
+  }
+  .secondrowmenu {
+    padding-bottom: 65px;
   }
   /* General embed padding */
   .embedpadding {
@@ -118,12 +132,12 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
     padding-top: 25px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 16px;
+    padding-bottom: 25px;
   }
   /* Sampreeth Rao */
   h3 {
-    margin-top: 75px;
-    margin-bottom: 12px;
+    margin-top: 45px;
+    margin-bottom: 16px;
   }
   /* grid text */
   p[id$='gridtext'] {
@@ -167,11 +181,10 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
     transition: all 0.1s ease-in;
   }
 }
-
 /* ---------------------------------------------------------------------------
 LARGER SCREENS (DESKTOPS, LAPTOPS)
 ----------------------------------------------------------------------------*/
-@media (max-width: 1499px, min-width: 992px) {
+@media (max-width: 1499px) {
   .squares {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -183,15 +196,28 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
+  .socialmedialogos {
+    padding-top: 10px;
+    padding-left: 47px;
+  }
+  .copyright{
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 47px;
+    font-size: 10px;
+  }
   .menu {
-    padding-top: 5px;
-    padding-bottom: 65px;
+    padding-top: 0px;
+    padding-bottom: 12px;
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
     font-size: 14px;
+  }
+  .secondrowmenu {
+    padding-bottom: 50px;
   }
   /* General embed padding */
   .embedpadding {
@@ -212,11 +238,11 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     padding-top: 25px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 16px;
+    padding-bottom: 25px;
   }
   /* Sampreeth Rao */
   h3 {
-    margin-top: 75px;
+    margin-top: 24px;
     margin-bottom: 12px;
   }
   /* grid text */
@@ -277,14 +303,28 @@ SMALL SCREENS (TABLETS)
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
   }
-  .menu {
+  .socialmedialogos{
     padding-top: 10px;
-    padding-bottom: 47px;
+    padding-left: 40px;
+  }
+  .copyright{
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 9px;
+  }
+  .menu {
+    padding-top: 0px;
+    padding-bottom: 12px;
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2);*/
     text-align: center;
+  }
+  /* Spacing between the menu and the first grid element */
+  .secondrowmenu {
+    padding-bottom: 50px;
   }
   .embedpadding {
     padding-left: 40px;
@@ -304,12 +344,12 @@ SMALL SCREENS (TABLETS)
     padding-top: 12px;
     padding-left: 40px;
     padding-right: 70px;
-    padding-bottom: 3px;
+    padding-bottom: 12px;
   }
 
     /* Sampreeth Rao */
     h3 {
-      margin-top: 50px;
+      margin-top: 24px;
       margin-bottom: 12px;
     }
     /* grid text */
@@ -352,9 +392,19 @@ XTRA SMALL SCREENS (CELLPHONES)
       border: 1px solid rgba(86,61,124,.2);*/
       text-align: center;
     }
+    .socialmedialogos{
+      padding-top: 10px;
+      padding-left: 25px;
+    }
+    .copyright{
+      padding-top: 10px;
+      text-align: left;
+      padding-left: 25px;
+      font-size: 9px;
+    }
     .menu {
       padding-top: 0px;
-      padding-bottom: 21px;
+      padding-bottom: 8px;
       padding-left: 0px;
       padding-right: 0px;
       /*background-color: #eee;
@@ -362,6 +412,10 @@ XTRA SMALL SCREENS (CELLPHONES)
       border: 1px solid #ddd;
       border: 1px solid rgba(86,61,124,.2);*/
       text-align: center;
+    }
+    /* Spacing between the menu and the first grid element */
+    .secondrowmenu {
+      padding-bottom: 20px;
     }
     .embedpadding {
       padding-left: 25px;
@@ -381,12 +435,12 @@ XTRA SMALL SCREENS (CELLPHONES)
       padding-top: 9px;
       padding-left: 25px;
       padding-right: 25px;
-      padding-bottom: 0px;
+      padding-bottom: 9px;
     }
     /*  Sampreeth Rao */
     h3 {
-      margin-top: 23px;
-      margin-bottom: 12px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       letter-spacing: 2px;
     }
     /* gridtext */
@@ -423,7 +477,7 @@ Centered Columns (for the menu)
     float:none;
     /* reset the text-align */
     /* inline-block space fix */
-    margin-right:-4px;
+    margin-right:0px;
 }
 
 

@@ -51,7 +51,9 @@ $("[id$='grid']").click(function(){
       $("#" + clickedtext).css("font-weight","Bold");
     });
 
-
+    //PAGE AUTO-SCROLLS TO EMBED POSITION ON CLICK OF GRID ELEMENT
+    //the -90 accounts for the fact that for photos, the layout is inverted and the description is positioned ABOVE the embed (which the selector is targetting in this case)
+    $("html, body").scrollTop($("#" + clicked).position().top - 90);
   //create a function that makes video stop playing when another link is clicked
   //create a function that automatically scrolls the page to the top when a picture in the grid is clicked
 });
