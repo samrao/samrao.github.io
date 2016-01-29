@@ -1,4 +1,5 @@
 img[id$='bg'] {
+  /*centers image*/
     height: 100%;
     position: absolute;
     left: 50%;

@@ -152,6 +152,7 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
   /*photo caption spacing*/
   p.caption{
     margin-bottom: 16px;
+    font-size: 14px;
   }
   /*embed photo spacing*/
   img.photo {
@@ -259,6 +260,7 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
   /*photo caption spacing*/
   p.caption{
     margin-bottom: 16px;
+    font-size: 14px;
   }
   /*embed photo spacing*/
   img.photo {
@@ -333,12 +335,12 @@ SMALL SCREENS (TABLETS)
   }
   /* Padding for 50mm side by side photos */
   .embedpaddingleft {
-    padding-left: 40px;
+    padding-left: 0px;
     padding-right: 5px;
   }
   /* Padding for 50mm side by side photos */
   .embedpaddingright {
-    padding-right: 40px;
+    padding-right: 0px;
     padding-left: 5px;
   }
   .embedtextpadding {
@@ -366,6 +368,7 @@ SMALL SCREENS (TABLETS)
     /*photo caption spacing*/
     p.caption{
       margin-bottom: 14px;
+      font-size: 13px;
     }
     /*embed photo spacing*/
     img.photo {
@@ -459,6 +462,7 @@ XTRA SMALL SCREENS (CELLPHONES)
     /*photo caption spacing*/
     p.caption{
       margin-bottom: 8px;
+      font-size: 13px;
     }
     /*embed photo spacing*/
     img.photo {
