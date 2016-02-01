@@ -93,15 +93,18 @@
       <!--  ==========================================================================
           EMAIL FORM
       ================================================================================ -->
-
-      <form id="contactform" method="POST">
-            What music have you been listening to?
-            <!-- a hidden field for spammers -->
-          <input type="text" name="_gotcha" style="display:none" />
-          <input type="text" name="music">
-          <input type="submit" value="Send">
-      </form>
-
+      <div class="row">
+        <div class="col-xs-12 embedtextpadding">
+          <form id="contactform" method="POST">
+            <p id="musicsubmissionembedptext">What songs/albums have you been listening to recently?<p>
+              <!-- a hidden field for spammers -->
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="blog2.html" />
+            <input type="text" name="musicsubmissions">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
       <!--  ==========================================================================
           BLOG
       ================================================================================ -->
