@@ -103,7 +103,7 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
     font-size: 14px;
   }
   /* Bold menu titles on hover */
-  .menu:hover {
+  .boldonhover:hover {
     font-weight: bold;
     -moz-transition: all 0.1s ease-in;
     -o-transition: all 0.1s ease-in;
@@ -111,7 +111,11 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
     transition: all 0.1s ease-in;
   }
   .secondrowmenu {
-    padding-bottom: 65px;
+    padding-bottom: 77px;
+  }
+  /* Spacing between the menu and the first grid element for the Blog page*/
+  .secondrowmenuforblog {
+    padding-bottom: 40px;
   }
   /* General embed padding */
   .embedpadding {
@@ -219,7 +223,7 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     font-size: 14px;
   }
   /* Bold menu titles on hover */
-  .menu:hover {
+  .boldonhover:hover {
     font-weight: bold;
     -moz-transition: all 0.1s ease-in;
     -o-transition: all 0.1s ease-in;
@@ -227,7 +231,11 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
     transition: all 0.1s ease-in;
   }
   .secondrowmenu {
-    padding-bottom: 50px;
+    padding-bottom: 62px;
+  }
+  /* Spacing between the menu and the first grid element for the Blog page*/
+  .secondrowmenuforblog {
+    padding-bottom: 25px;
   }
   /* General embed padding */
   .embedpadding {
@@ -335,7 +343,11 @@ SMALL SCREENS (TABLETS)
   }
   /* Spacing between the menu and the first grid element */
   .secondrowmenu {
-    padding-bottom: 50px;
+    padding-bottom: 62px;
+  }
+  /* Spacing between the menu and the first grid element for the Blog page*/
+  .secondrowmenuforblog {
+    padding-bottom: 38px;
   }
   .embedpadding {
     padding-left: 40px;
@@ -357,7 +369,6 @@ SMALL SCREENS (TABLETS)
     padding-right: 40px;
     padding-bottom: 12px;
   }
-
     /* Sampreeth Rao */
     h3 {
       margin-top: 24px;
@@ -429,7 +440,11 @@ XTRA SMALL SCREENS (CELLPHONES)
     }
     /* Spacing between the menu and the first grid element */
     .secondrowmenu {
-      padding-bottom: 20px;
+      padding-bottom: 28px;
+    }
+    /* Spacing between the menu and the first grid element for the Blog page*/
+    .secondrowmenuforblog {
+      padding-bottom: 15px;
     }
     .embedpadding {
       padding-left: 25px;
