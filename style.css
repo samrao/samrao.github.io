@@ -35,7 +35,7 @@ a:visited {
 }
 /* Picture captions */
 p {
-  color: black;
+  color: #383838;
   padding: 0px;
   margin: 0px;
   font-size: 9px;
@@ -510,27 +510,3 @@ Centered Columns (for the menu)
     /* inline-block space fix */
     margin-right:0px;
 }
-
-
-/* ---------------------------------------------------------------------------
-Fade image to grey on mouseover, make text bold on mouseover
-----------------------------------------------------------------------------*/
-
-
-/*
-.primary img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.primary:hover img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
-  -webkit-filter: none;
-  filter: none;
-}*/
