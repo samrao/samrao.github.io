@@ -94,10 +94,15 @@
           EMAIL FORM
       ================================================================================ -->
 
-      <form action="MAILTO:sampreeth20@hotmail.com" method="post" enctype="text/plain">
-      What music are you listening to at the moment?<br>
-      <input type="text" name="mail" value="your email" size="50"><br>
-      <input type="submit" value="Send">
+      <form method="post" name="contact_form"
+      action="contact-form-handler.php">
+          Your Name:
+          <input type="text" name="name">
+          Email Address:
+          <input type="text" name="email">
+          Message:
+          <textarea name="message"></textarea>
+          <input type="submit" value="Submit">
       </form>
 
 
