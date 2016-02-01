@@ -1,11 +1,6 @@
-//CONTACT FORM STUFF
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("email","req","Please provide your email");
-frmvalidator.addValidation("email","email",
-  "Please enter a valid email address");
-
-
+//BLOG FORM SPAMBOT SECURITY
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'sampreeth20' + '@' + 'hotmail' + '.' + 'com');
 
 
 //HIDE BW IMAGES AND EMBEDS ON PAGELOAD

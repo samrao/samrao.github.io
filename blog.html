@@ -94,9 +94,10 @@
           EMAIL FORM
       ================================================================================ -->
 
-      <form action="//formspree.io/sampreeth20@hotmail.com"
-            method="POST">
+      <form id="contactform" method="POST">
             What music have you been listening to?
+            <!-- a hidden field for spammers -->
+          <input type="text" name="_gotcha" style="display:none" />
           <input type="text" name="music">
           <input type="submit" value="Send">
       </form>
