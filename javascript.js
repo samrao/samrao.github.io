@@ -1,6 +1,3 @@
-//BLOG FORM SPAMBOT SECURITY
-    var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'sampreeth20' + '@' + 'hotmail' + '.' + 'com');
 
 
 //HIDE BW IMAGES AND EMBEDS ON PAGELOAD
