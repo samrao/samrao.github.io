@@ -2,8 +2,6 @@ var numberofimages = 7;
 var randomnumber = Math.floor(numberofimages*Math.random());
 $('#' + randomnumber + 'bg').show();
 
-
-
 //$('#' + randomnumber + 'bg').css('display','block');
 //$('#' + randomnumber + 'bg').attr('id','bg');
 
