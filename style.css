@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------------------------
 GENERAL
 ----------------------------------------------------------------------------*/
+
 body {
   font-family: Open Sans;
   font-weight: lighter;
@@ -495,6 +496,11 @@ XTRA SMALL SCREENS (CELLPHONES)
     img.photowithcaption {
       margin-bottom: 2px;
     }
+    /*make "Commercial" text in the menu actually center align */
+    div.col-xs-3 {
+      padding: 0px;
+    }
+
 }
 
 /* ---------------------------------------------------------------------------

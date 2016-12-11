@@ -87,9 +87,9 @@
       ================================================================================ -->
 
       <div class="row row-centered menu">
-        <div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="videomenu" style="font-weight:bold">Video</div>
-        <a href="photo.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="photomenu">Photo</div></a>
-        <a href="art.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="artmenu">Art/Design</div></a>
+        <div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="filmmenu" style="font-weight:bold">Film</div>
+        <a href="commercial.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="commercialmenu">Commercial</div></a>
+        <a href="photo.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="photomenu">Photo/Art</div></a>
       </div>
       <div class="row row-centered secondrowmenu">
         <a href="blog.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="blogmenu">Blog</div></a>
@@ -101,6 +101,32 @@
           EMBEDS
       ================================================================================ -->
       <!--all embeds hidden in JS onload -->
+      <div class="row" id="tvembed">
+        <div class="col-xs-12 embedpadding">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/192420592" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="tvembedtext">
+        <div class="col-xs-12 embedtextpadding">
+          <p id="tvembedptext">
+            Coming Soon. 13 min 33 sec.
+            <br>
+            <br>Kevin Ramroop is a twenty-two year old just trying to do what he loves; making soulful and sultry r&amp;b music.
+             As he roams the forest of his childhood, Kevin reflects on the philosophies by which he lives his life, remembering
+              the past while wondering about the future. Drifting in and out of the physical reality of the forest and his own
+              hyper-realistic headspace, he finally makes a discovery about his perspective on the world.
+            <br>
+            <br>Screenings:
+            <br>Regent Park Film Festival
+            <br>Scarborough Worldwide Film Festival
+            <br>CUE Margin of Eras
+            <br>RISE
+          </p>
+        </div>
+      </div>
+<!----------------------------->
       <div class="row" id="redembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
@@ -112,7 +138,11 @@
         <div class="col-xs-12 embedtextpadding"> <!-- embedtextpadding sets padding for embedded text -->
           <!-- embedptext id for responsive font resizing -->
           <p id="redembedptext">Why do you make music?
-            <br><br>TIFFxInstagram selection, click <a href="https://www.instagram.com/p/BJGyRu7jRJ3/"><b>here</b></a> and <a href="http://www.tiff.net/the-review/tiffxinstagram-shorts-festival/"><b>here</b></a> for more info.<br>
+            <br><br>TIFFxInstagram selection, click <a href="https://www.instagram.com/p/BJGyRu7jRJ3/"><b>here</b></a> and <a href="http://www.tiff.net/the-review/tiffxinstagram-shorts-festival/"><b>here</b></a> for more info.
+            <br>
+            <br>"Cool docu vibe and abstract visuals" - Nabil Elderkin
+            <br>"Well structured short doc, love getting inside the compulsion to create, chasing that one moment when it comes together." - Ben Richardson
+            <br>
             <br>DIRECTOR/DP // Sampreeth Rao
             <br>LEAD // Kevin Ramroop
             <br>SCORE // Kevin Ramroop
@@ -130,6 +160,9 @@
             <br><br>Produced by Triangle &amp; Seed Art Collective
             <br>With the assistance of LIFT, Animating Democracy
             <br>Funded by CUE
+            <br>
+            <br>
+            <img src="imgs/video/tiffxinstagram.jpg" class="img-responsive">
           </p>
         </div>
       </div>
@@ -213,16 +246,16 @@
         </div>
       </div>
 <!----------------------------->
-      <div class="row" id="alreadystartedembed">
+      <div class="row" id="straighttotheheadembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/151177312" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/148997056" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
       </div>
-      <div class="row" id="alreadystartedembedtext">
+      <div class="row" id="straighttotheheadembedtext">
         <div class="col-xs-12 embedtextpadding">
-          <p id="alreadystartedembedptext"></p>
+          <p id="straighttotheheadembedptext"></p>
         </div>
       </div>
 
@@ -232,6 +265,14 @@
 
         <!-- greyfade class for turning images grey on mousehover -->
         <!-- img-responsive allows the square image in the column to behave responsively as the page size changes -->
+        <a id="tvgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="tvimg" src="imgs/video/tv.jpg" class="img-responsive">
+            <img id="tvimgbw" src="imgs/video/tvbw.jpg" class="img-responsive">
+            <p id="tvgridtext">Watching TV with the Mind Off (Coming Soon)</p>
+          </div>
+        </a>
+
         <a id="redgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="redimg" src="imgs/video/red.jpg" class="img-responsive">
@@ -241,14 +282,6 @@
           </div>
         </a>
 
-        <a id="liylgrid">
-          <div class="col-xs-6 col-sm-4 squares greyfade">
-            <img id="liylimg" src="imgs/video/liyl.jpg" class="img-responsive">
-            <!-- refer to JS for code that hides the bw imgs on pageload -->
-            <img id="liylimgbw" src="imgs/video/liylbw.jpg" class="img-responsive">
-            <p id="liylgridtext">Live Inside Your Love</p>
-          </div>
-        </a>
         <!-- to make columns of different heights stack properly -->
         <div class="clearfix visible-xs-block"></div>
 
@@ -260,6 +293,27 @@
           </div>
         </a>
 
+        <div class="clearfix visible-sm-block visible-md-block"></div>
+
+        <a id="liylgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="liylimg" src="imgs/video/liyl.jpg" class="img-responsive">
+            <!-- refer to JS for code that hides the bw imgs on pageload -->
+            <img id="liylimgbw" src="imgs/video/liylbw.jpg" class="img-responsive">
+            <p id="liylgridtext">Live Inside Your Love</p>
+          </div>
+        </a>
+
+        <div class="clearfix visible-xs-block"></div>
+
+        <a id="straighttotheheadgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="straighttotheheadimg" src="imgs/video/straighttothehead.jpg" class="img-responsive">
+            <img id="straighttotheheadimgbw" src="imgs/video/straighttotheheadbw.jpg" class="img-responsive">
+            <p id="straighttotheheadgridtext">Straight to the Head</p>
+          </div>
+        </a>
+
         <a id="hidegrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="hideimg" src="imgs/video/hide2.jpg" class="img-responsive">
@@ -267,6 +321,8 @@
             <p id="hidegridtext">Hide</p>
           </div>
         </a>
+
+        <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
 
         <a id="wavegrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
@@ -284,6 +340,8 @@
           </div>
         </a>
 
+        <div class="clearfix visible-xs-block"></div>
+
         <a id="stayforlovegrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="stayforloveimg" src="imgs/video/stayforlove.jpg" class="img-responsive">
@@ -292,27 +350,21 @@
           </div>
         </a>
 
-        <a id="alreadystartedgrid">
+        <div class="clearfix visible-sm-block visible-md-block"></div>
+
+        <!-- <a id="alreadystartedgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="alreadystartedimg" src="imgs/video/alreadystarted.jpg" class="img-responsive">
             <img id="alreadystartedimgbw" src="imgs/video/alreadystartedbw.jpg" class="img-responsive">
             <p id="alreadystartedgridtext">Already Started</p>
           </div>
-        </a>
+        </a> -->
 
         <!-- <a id="straighttotheheadgrid"> -->
           <!--<div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="straighttotheheadimg" src="imgs/video/straighttothehead.jpg" class="img-responsive">
             <img id="straighttotheheadimgbw" src="imgs/video/straighttotheheadbw.jpg" class="img-responsive">
             <p id="straighttotheheadgridtext">Straight To The Head (Coming Soon)</p>
-          </div>-->
-        <!-- </a> -->
-
-        <!-- <a id="chronotriggergrid"> -->
-          <!--<div class="col-xs-6 col-sm-4 squares greyfade">
-            <img id="chronotriggerimg" src="imgs/video/chronotrigger.jpg" class="img-responsive">
-            <img id="chronotriggerimgbw" src="imgs/video/chronotriggerbw.jpg" class="img-responsive">
-            <p id="chronotriggergridtext">Chrono Trigger (Coming Soon)</p>
           </div>-->
         <!-- </a> -->
 

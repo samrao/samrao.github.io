@@ -88,14 +88,16 @@
       <!--<div class="row row-centered">
         <div class="col-xs-12 col-centered"><a href="https://www.instagram.com/raorry"><img src="instagram.png" width="40px"></a></div>
       </div>-->
+
       <!--  ==========================================================================
           MENU
       ================================================================================ -->
 
+
       <div class="row row-centered menu">
-        <a href="video.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="videomenu">Video</div></a>
-        <div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="photomenu" style="font-weight:bold">Photo</div>
-        <a href="art.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="artmenu">Art/Design</div></a>
+        <a href="film.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="filmmenu">Film</div></a>
+        <a href="commercial.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="commercialmenu">Commercial</div></a>
+        <div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="photomenu" style="font-weight:bold">Photo/Art</div></a>
       </div>
       <div class="row row-centered secondrowmenu">
         <a href="blog.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="blogmenu">Blog</div></a>
@@ -129,11 +131,39 @@
         <!-- to make columns of different heights stack properly -->
         <div class="clearfix visible-xs-block"></div>
 
-        <a id="indiagrid">
+        <!-- <a id="indiagrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="indiaimg" src="imgs/photo/grid/india.jpg" class="img-responsive">
             <img id="indiaimgbw" src="imgs/photo/grid/indiabw.jpg" class="img-responsive">
             <p id="indiagridtext">India</p>
+          </div>
+        </a> -->
+        <a id="businesscardgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="businesscardimg" src="imgs/art/grid/businesscard2.jpg" class="img-responsive">
+            <!-- refer to JS for code that hides the bw imgs on pageload -->
+            <img id="businesscardimgbw" src="imgs/art/grid/businesscard2bw.jpg" class="img-responsive">
+            <p id="businesscardgridtext">Triangle &amp; Seed Augmented Reality Business Cards</p>
+          </div>
+        </a>
+
+        <a id="wavegrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="waveimg" src="imgs/art/grid/wavethesis2.jpg" class="img-responsive">
+            <!-- refer to JS for code that hides the bw imgs on pageload -->
+            <img id="waveimgbw" src="imgs/art/grid/wavethesis2bw.jpg" class="img-responsive">
+            <p id="wavegridtext">Wave (Doc)</p>
+          </div>
+        </a>
+
+        <div class="clearfix visible-xs-block"></div>
+
+        <a id="betweennapsgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="betweennapsimg" src="imgs/art/grid/betweennaps.jpg" class="img-responsive">
+            <!-- refer to JS for code that hides the bw imgs on pageload -->
+            <img id="betweennapsimgbw" src="imgs/art/grid/betweennapsbw.jpg" class="img-responsive">
+            <p id="betweennapsgridtext">Between Naps In Sault St. Marie</p>
           </div>
         </a>
 
@@ -141,9 +171,11 @@
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="otherimg" src="imgs/photo/grid/other.jpg" class="img-responsive">
             <img id="otherimgbw" src="imgs/photo/grid/otherbw.jpg" class="img-responsive">
-            <p id="othergridtext">Other</p>
+            <p id="othergridtext">Other Photo</p>
           </div>
         </a>
+
+
 
         <!--  ==========================================================================
             HIDDEN PHOTOS
