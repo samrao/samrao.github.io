@@ -101,6 +101,17 @@
           EMBEDS
       ================================================================================ -->
       <!--all embeds hidden in JS onload -->
+      <div class="row" id="nessembedtext">   <!-- embedtext id for javascript hiding and showing -->
+        <div class="col-xs-12 embedtextpadding"> <!-- embedtextpadding sets padding for embedded text -->
+          <!-- embedptext id for responsive font resizing -->
+          <p id="nessembedptext">
+            Coming soon.
+            <br>
+            <br>A profile of the hat collaboration between Mitchell &amp; Ness and Chronic Ink's BKS.
+          </p>
+        </div>
+      </div>
+<!----------------------------->
       <div class="row" id="chinutayembedtext">   <!-- embedtext id for javascript hiding and showing -->
         <div class="col-xs-12 embedtextpadding"> <!-- embedtextpadding sets padding for embedded text -->
           <!-- embedptext id for responsive font resizing -->
@@ -111,6 +122,15 @@
           </p>
         </div>
       </div>
+<!----------------------------->
+            <div class="row" id="fdaembedtext">   <!-- embedtext id for javascript hiding and showing -->
+              <div class="col-xs-12 embedtextpadding"> <!-- embedtextpadding sets padding for embedded text -->
+                <!-- embedptext id for responsive font resizing -->
+                <p id="fdaembedptext">
+                  A cinematic look into the future of 7D Surgical Cranial Navigation System while in use.
+                </p>
+              </div>
+            </div>
 <!----------------------------->
       <div class="row" id="7dembed">
         <div class="col-xs-12 embedpadding">
@@ -173,6 +193,14 @@
 
         <!-- greyfade class for turning images grey on mousehover -->
         <!-- img-responsive allows the square image in the column to behave responsively as the page size changes -->
+        <a id="nessgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="nessimg" src="imgs/commercial/ness.jpg" class="img-responsive">
+            <img id="nessimgbw" src="imgs/commercial/nessbw.jpg" class="img-responsive">
+            <p id="nessgridtext">Mitchell &amp; Ness x Chronic Ink (Coming Soon)</p>
+          </div>
+        </a>
+
         <a id="chinutaygrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="chinutayimg" src="imgs/commercial/chinutay.jpg" class="img-responsive">
@@ -180,6 +208,18 @@
             <p id="chinutaygridtext">Chinutay &amp; Co. (Coming Soon)</p>
           </div>
         </a>
+
+       <div class="clearfix visible-xs-block"></div>
+
+       <a id="fdagrid">
+         <div class="col-xs-6 col-sm-4 squares greyfade">
+           <img id="fdaimg" src="imgs/commercial/fda.jpg" class="img-responsive">
+           <img id="fdaimgbw" src="imgs/commercial/fdabw.jpg" class="img-responsive">
+           <p id="fdagridtext">7D Surgical Future</p>
+         </div>
+       </a>
+
+        <div class="clearfix visible-sm-block visible-md-block"></div>
 
         <a id="7dgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
@@ -189,8 +229,6 @@
           </div>
         </a>
 
-        <div class="clearfix visible-xs-block"></div>
-
         <a id="chronic1grid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="chronic1img" src="imgs/commercial/chronic1.jpg" class="img-responsive">
@@ -198,8 +236,6 @@
             <p id="chronic1gridtext">Chronic Ink 8 to Infinity</p>
           </div>
         </a>
-
-        <div class="clearfix visible-sm-block visible-md-block"></div>
 
         <!-- <a id="remapgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
