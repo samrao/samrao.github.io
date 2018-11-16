@@ -99,7 +99,23 @@
       <!--  ==========================================================================
           EMBEDS
       ================================================================================ -->
-      <div class="row" id="nessembed">
+      <div class="row" id="mindfulmcembed">
+        <div class="col-xs-12 embedpadding">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/301122509" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="mindfulmcembedtext">   <!-- embedtext id for javascript hiding and showing -->
+        <div class="col-xs-12 embedtextpadding"> <!-- embedtextpadding sets padding for embedded text -->
+          <!-- embedptext id for responsive font resizing -->
+          <p id="mindfulmcembedptext">
+              A short documentary profiling Hernan Munoz, a member of the CAMH-affiliated rap group, the Mindful MCs.
+              <br><br> Featured on <a href="https://thelocal.to/shedding-light-on-the-shadow-a4128624d7d3"><b>The Local</b></a>.
+          </p>
+        </div>
+      </div>
+<!----------------------------->      <div class="row" id="nessembed">
         <div class="col-xs-12 embedpadding">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe height="1080" width="1920" src="https://player.vimeo.com/video/204145234" frameborder="0" allowfullscreen></iframe>
@@ -222,6 +238,14 @@
 
         <!-- greyfade class for turning images grey on mousehover -->
         <!-- img-responsive allows the square image in the column to behave responsively as the page size changes -->
+        <a id="mindfulmcgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="mindfulmcimg" src="imgs/commercial/mindfulmc.jpg" class="img-responsive">
+            <img id="mindfulmcimgbw" src="imgs/commercial/mindfulmcbw.jpg" class="img-responsive">
+            <p id="mindfulmcgridtext">Shedding Light on the Shadow</p>
+          </div>
+        </a>
+
         <a id="nessgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="nessimg" src="imgs/commercial/ness.jpg" class="img-responsive">
@@ -229,6 +253,8 @@
             <p id="nessgridtext">Mitchell &amp; Ness x Chronic Ink</p>
           </div>
         </a>
+
+          <div class="clearfix visible-xs-block"></div>
 
         <a id="chinutaygrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
@@ -238,7 +264,7 @@
           </div>
         </a>
 
-       <div class="clearfix visible-xs-block"></div>
+          <div class="clearfix visible-sm-block visible-md-block"></div>
 
        <a id="fdagrid">
          <div class="col-xs-6 col-sm-4 squares greyfade">
@@ -247,8 +273,6 @@
            <p id="fdagridtext">7D Surgical Future</p>
          </div>
        </a>
-
-        <div class="clearfix visible-sm-block visible-md-block"></div>
 
         <a id="7dgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
