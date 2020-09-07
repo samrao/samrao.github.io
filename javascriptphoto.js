@@ -62,5 +62,5 @@ $("[id$='grid']").click(function(){
 //this is an additional funtion that is slifhtly changed from the "Film" page to go 800 pixels down the page when the grid is clicked
 $("[id$='grid']").click(function(){
   var clicked = this.id;
-  $("html, body").scrollTop($("#" + clicked).position().top + 800);
+  $("html, body").scrollTop($("#" + clicked + "text").position().top - 200);
 });
