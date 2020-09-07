@@ -15,6 +15,7 @@
     <title>Sampreeth Rao</title>
     <!-- Fonts from Google -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">-->
@@ -94,16 +95,16 @@
 
 
       <div class="row row-centered menu">
-        <a href="film.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="filmmenu">Film</div></a>
-        <a href="commercial.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="commercialmenu">Commercial</div></a>
-        <div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="photomenu" style="font-weight:bold">Photo/Art</div></a>
+        <a href="film.html"><div class="col-xs-1 col-md-1 col-lg-1 col-centered boldonhover" id="filmmenu">Film</div></a>
+        <!--<a href="commercial.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="commercialmenu">Commercial</div></a>-->
+        <div class="col-xs-1 col-md-1 col-lg-1 col-centered boldonhover" id="photomenu" style="font-weight:bold">Art</div></a>
+        <a href="https://www.waveartcollective.ca"><div class="col-xs-1 col-md-1 col-lg-1 col-centered boldonhover" id="wavemenu">Wave</div></a>
+      <!--</div>
+      <div class="row row-centered secondrowmenu">-->
+        <!--<a href="blog.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="blogmenu">Blog</div></a>-->
+        <a href="about.html"><div class="col-xs-1 col-md-1 col-lg-1 col-centered boldonhover" id="aboutmenu">Bio</div></a>
+        <a href="contact.html"><div class="col-xs-1 col-md-1 col-lg-1 col-centered boldonhover" id="contactmenu">Contact</div></a>
       </div>
-      <div class="row row-centered secondrowmenu">
-        <a href="blog.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="blogmenu">Blog</div></a>
-        <a href="about.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="aboutmenu">Bio</div></a>
-        <a href="contact.html"><div class="col-xs-3 col-md-2 col-lg-2 col-centered boldonhover" id="contactmenu">Contact</div></a>
-      </div>
-
 
       <!--  ==========================================================================
           GRID
@@ -111,6 +112,15 @@
 
         <!-- greyfade class for turning images grey on mousehover -->
         <!-- img-responsive allows the square image in the column to behave responsively as the page size changes -->
+        <a id="treesgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="treesimg" src="imgs/photo/grid/trees.jpg" class="img-responsive">
+            <!-- refer to JS for code that hides the bw imgs on pageload -->
+            <img id="treesimgbw" src="imgs/photo/grid/treesbw.jpg" class="img-responsive">
+            <p id="treesgridtext">Where the Trees Speak (Upcoming)</p>
+          </div>
+        </a>
+
         <a id="lotuseatersgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="lotuseatersimg" src="imgs/photo/grid/lotuseaters.jpg" class="img-responsive">
@@ -120,6 +130,8 @@
           </div>
         </a>
 
+        <div class="clearfix visible-xs-block"></div>
+
         <a id="50mmgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="50mmimg" src="imgs/photo/grid/50mm.jpg" class="img-responsive">
@@ -127,16 +139,7 @@
             <p id="50mmgridtext">50mm From The Mitsubishi</p>
           </div>
         </a>
-        <!-- to make columns of different heights stack properly -->
-        <div class="clearfix visible-xs-block"></div>
 
-        <!-- <a id="indiagrid">
-          <div class="col-xs-6 col-sm-4 squares greyfade">
-            <img id="indiaimg" src="imgs/photo/grid/india.jpg" class="img-responsive">
-            <img id="indiaimgbw" src="imgs/photo/grid/indiabw.jpg" class="img-responsive">
-            <p id="indiagridtext">India</p>
-          </div>
-        </a> -->
         <a id="businesscardgrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="businesscardimg" src="imgs/art/grid/businesscard2.jpg" class="img-responsive">
@@ -146,40 +149,76 @@
           </div>
         </a>
 
-        <a id="wavegrid">
-          <div class="col-xs-6 col-sm-4 squares greyfade">
-            <img id="waveimg" src="imgs/art/grid/wavethesis2.jpg" class="img-responsive">
-            <!-- refer to JS for code that hides the bw imgs on pageload -->
-            <img id="waveimgbw" src="imgs/art/grid/wavethesis2bw.jpg" class="img-responsive">
-            <p id="wavegridtext">Wave (Doc)</p>
-          </div>
-        </a>
-
         <div class="clearfix visible-xs-block"></div>
-
-        <a id="betweennapsgrid">
-          <div class="col-xs-6 col-sm-4 squares greyfade">
-            <img id="betweennapsimg" src="imgs/art/grid/betweennaps.jpg" class="img-responsive">
-            <!-- refer to JS for code that hides the bw imgs on pageload -->
-            <img id="betweennapsimgbw" src="imgs/art/grid/betweennapsbw.jpg" class="img-responsive">
-            <p id="betweennapsgridtext">Between Naps In Sault St. Marie</p>
-          </div>
-        </a>
 
         <a id="othergrid">
           <div class="col-xs-6 col-sm-4 squares greyfade">
             <img id="otherimg" src="imgs/photo/grid/other.jpg" class="img-responsive">
             <img id="otherimgbw" src="imgs/photo/grid/otherbw.jpg" class="img-responsive">
-            <p id="othergridtext">Other Photo</p>
+            <p id="othergridtext">Other Photos</p>
           </div>
         </a>
 
+        <!-- <a id="indiagrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="indiaimg" src="imgs/photo/grid/india.jpg" class="img-responsive">
+            <img id="indiaimgbw" src="imgs/photo/grid/indiabw.jpg" class="img-responsive">
+            <p id="indiagridtext">India</p>
+          </div>
+        </a> -->
 
+        <!--<a id="wavegrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="waveimg" src="imgs/art/grid/wavethesis2.jpg" class="img-responsive">
+            <img id="waveimgbw" src="imgs/art/grid/wavethesis2bw.jpg" class="img-responsive">
+            <p id="wavegridtext">Wave (Doc)</p>
+          </div>
+        </a>-->
+
+
+        <!--<a id="betweennapsgrid">
+          <div class="col-xs-6 col-sm-4 squares greyfade">
+            <img id="betweennapsimg" src="imgs/art/grid/betweennaps.jpg" class="img-responsive">
+            <img id="betweennapsimgbw" src="imgs/art/grid/betweennapsbw.jpg" class="img-responsive">
+            <p id="betweennapsgridtext">Between Naps In Sault St. Marie</p>
+          </div>
+        </a>-->
 
         <!--  ==========================================================================
             HIDDEN PHOTOS
         ================================================================================ -->
         <!--all embeds hidden in JS onload -->
+
+        <div class="row" id="treesembedtext">
+          <div class="col-xs-12 col-centered embedtextpadding">
+            <p id="treesembedptext">
+              <i>Where the Trees Speak</i> is a participatory audiovisual installation for Nuit Blanche 2021 that depicts undulating body parts juxtaposed against the Rouge Park’s changing seasons, representing Scarborough’s migratory origins.
+              <br>
+              <br>
+              The exhibition connects the Rouge Park’s history and location as a metaphor for the changing demographics in Scarborough. With the theme of Nuit Blanche being the “Space Between Us”, the Rouge has quite literally been transitional space. This is a concept that we explore in three ways:
+              <br>
+              <br>
+              Migration - The human history of the Rouge area goes back 10,000 years. From Palaeolithic nomadic hunters, the Iroquoian settlement of Ganatsekwyagon (Bead Hill) in the 1660s and the portage route named the Toronto Carrying-Place Trail, the European exploration and farm settlements in the 1800s, to the current wave of Caribbean and Asian immigrants since the 1970s, the Rouge area has historically served as a space between point A and B along migratory paths. The transitory journeys of each era of Rouge inhabitants have created a human cycle of transformation that echoes the changing of the seasons.
+              <br>
+              <br>
+              Geography - Situated between east Scarborough and west Pickering, the Rouge Park is a space between two rapidly expanding areas of urban sprawl. As we observe wildlife increasingly encroach upon our suburban homes as a result of being nudged out of their own habitats, it begs the question, where will new migrants find accessible living moving forward? What does that mean for Scarborough’s diverse cultural identity?
+              <br>
+              <br>
+              Identity - Many first-generation Canadians grapple with their identity, being forced to navigate a space between the cultural traditions of their homelands and the cultural mosaic of Scarborough. Similarly, just as the Rouge that we have explored throughout childhood starts to become familiar, the seasonal changes cause enough erosion to reintroduce the unknown. Ultimately it is this lack of lasting familiarity that makes the Rouge an effective metaphor for first-generation identity in Scarborough.
+              <br>
+              <br>
+              Project rendering:
+            </p>
+          </div>
+        </div>
+        <div class="row" id="treesembed">
+          <div class="col-xs-12 embedpadding">
+              <img class="img-responsive photo center-block" src="imgs/photo/wherethetreesspeak/rendering.jpg">
+          </div>
+        </div>
+
+<!----------------------------->
+
         <div class="row row-centered" id="businesscardembedtext">
           <div class="col-xs-12 col-centered embedtextpadding">
             <p id="businesscardembedptext">Business cards designed for Triangle &amp; Seed, with an augmented reality app which uses image-recognition to play a video on the card.</p>
@@ -191,14 +230,14 @@
           </div>
           <div class="col-xs-12 embedpadding">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe src="https://player.vimeo.com/video/145736952" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/fGRlJo7UO-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
 
 <!----------------------------->
 
-        <div class="row row-centered" id="waveembedtext">
+        <!--<div class="row row-centered" id="waveembedtext">
           <div class="col-xs-12 col-centered embedtextpadding">
             <p id="waveembedptext">An experimental documentary exploring childhood friendship and the relationship between willful ignorance and camaraderie. Using footage from 2013-2015 and archival video from my childhood. 32 min, 29 sec.</p>
           </div>
@@ -209,11 +248,11 @@
               <iframe src="https://player.vimeo.com/video/150830929" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
           </div>
-        </div>
+        </div>-->
 
 <!----------------------------->
 
-        <div class="row row-centered" id="betweennapsembedtext">
+        <!--<div class="row row-centered" id="betweennapsembedtext">
           <div class="col-xs-12 col-centered embedtextpadding">
             <p id="betweennapsembedptext">Single channel video loop visualizing hypnagogia on long car rides.</p>
           </div>
@@ -224,7 +263,7 @@
               <iframe src="https://player.vimeo.com/video/114183914" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
           </div>
-        </div>
+        </div>-->
 
 <!----------------------------->
 
@@ -501,8 +540,6 @@
 
 
       <!-- close container -->
-    </div>
-
     <!--  ==========================================================================
         JAVASCRIPT/JQUERY POINTERS
     ================================================================================ -->
@@ -514,6 +551,6 @@
     <!-- CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="javascriptphoto.js"></script>
   </body>
 </html>

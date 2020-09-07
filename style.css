@@ -44,10 +44,13 @@ p {
 }
 /* Sampreeth Rao */
 h3 {
-  font-size: 30px;
+  font-family: 'Anton';
+  font-size: 40px;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   text-align: center;
+  padding-left: 20px;
+  padding-bottom: 6px;
   /*color: red;*/
 }
 /* Triangle & Seed */
@@ -95,7 +98,8 @@ EXTRA LARGE SCREENS (DESKTOPS, LAPTOPS)
   }
   .menu {
     padding-top: 0px;
-    padding-bottom: 12px;
+    padding-bottom: 24px;
+    /*padding-bottom: 12px;*/
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
@@ -215,7 +219,8 @@ LARGER SCREENS (DESKTOPS, LAPTOPS)
   }
   .menu {
     padding-top: 0px;
-    padding-bottom: 12px;
+    padding-bottom: 22px;
+    /*padding-bottom: 12px;*/
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
@@ -335,7 +340,8 @@ SMALL SCREENS (TABLETS)
   }
   .menu {
     padding-top: 0px;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
+    /*padding-bottom: 12px;*/
     /*background-color: #eee;
     background-color: rgba(86,61,124,.15);
     border: 1px solid #ddd;
@@ -430,7 +436,8 @@ XTRA SMALL SCREENS (CELLPHONES)
     }
     .menu {
       padding-top: 0px;
-      padding-bottom: 8px;
+      padding-bottom: 18px;
+      /*padding-bottom: 8px;*/
       padding-left: 0px;
       padding-right: 0px;
       /*background-color: #eee;
@@ -470,8 +477,8 @@ XTRA SMALL SCREENS (CELLPHONES)
     /*  Sampreeth Rao */
     h3 {
       margin-top: 20px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
+      margin-bottom: 8px;
+      letter-spacing: 10px;
     }
     /* gridtext */
     p[id$='gridtext'] {
@@ -496,8 +503,8 @@ XTRA SMALL SCREENS (CELLPHONES)
     img.photowithcaption {
       margin-bottom: 2px;
     }
-    /*make "Commercial" text in the menu actually center align */
-    div.col-xs-3 {
+    /*make "Wave" text in the menu actually center align */
+    div.col-xs-1 {
       padding: 0px;
     }
 
@@ -508,6 +515,9 @@ Centered Columns (for the menu)
 ----------------------------------------------------------------------------*/
 .row-centered {
     text-align:center;
+}
+.row-right {
+    text-align:right;
 }
 .col-centered {
     display:inline-block;
